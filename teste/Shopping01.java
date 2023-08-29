@@ -8,6 +8,8 @@ public class Shopping01 {
         System.out.println(shoppingSystemTest01.getNumeroLoja());
         System.out.println(shoppingSystemTest01.getTipoLoja());
         System.out.println(shoppingSystemTest01.getTipoLoja());
+        System.out.println(shoppingSystemTest01.getTipoLoja());
+        System.out.println(shoppingSystemTest01.getTipoLoja());
 
 
     }
