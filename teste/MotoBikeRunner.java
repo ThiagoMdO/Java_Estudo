@@ -10,6 +10,21 @@ public class MotoBikeRunner {
         System.out.println(ducati.getNome());
 
         MotoBike.MaxSpeed(33);
-        
+
+        int ducatiSpeed = ducati.getSpeed();
+        System.out.println(ducatiSpeed);
+        ducatiSpeed += 100;
+        System.out.println(ducatiSpeed);
+        System.out.println(ducati.getSpeed());
+
+        ducati.setSpeed(ducatiSpeed);
+        System.out.println(ducati.getSpeed());
+
+        ducati.increaseSpeed(500);
+        System.out.println(ducati.getSpeed());
+
+        ducati.decreaseSpeed(900);
+        System.out.println(ducati.getSpeed());
+
     }
 }
