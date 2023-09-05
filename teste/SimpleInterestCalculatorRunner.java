@@ -11,6 +11,13 @@ public class SimpleInterestCalculatorRunner {
         SimpleInterestCalculator calculator = new SimpleInterestCalculator("44.23", "6.23");
         BigDecimal totalValue = calculator.calculateTotalValue(5);//5 years
         System.out.println(totalValue);
+        System.out.println("dsasd");
+        String teste = "asd";
+        String teste2 = "asd";
+        if(teste2 == teste){
+            System.out.println("ese");
+        }
+        System.out.println(teste.length());
 
     }
     public void doSomething(){
