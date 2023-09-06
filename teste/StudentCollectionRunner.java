@@ -2,6 +2,14 @@ package academy.devdojo.maratonajava.javacore.CompassUol.teste;
 import java.util.*;
 import academy.devdojo.maratonajava.javacore.CompassUol.dominio.Student01;
 
+class DescendingStudentComparator implements Comparator<Student01>{
+
+    @Override
+    public int compare(Student01 student1, Student01 student2) {
+        return Integer.compare(student1.getId(), student2.getId());
+    }
+}
+
 public class StudentCollectionRunner {
 
     public static void main(String[] args) {
@@ -19,5 +27,13 @@ public class StudentCollectionRunner {
         Collections.sort(studentsAl);
         //Collections.sort(newStudentAl);
         //System.out.println(newStudentAl);
+
+        System.out.println(studentsAl);
+
+        Collections.sort(studentsAl, new DescendingStudentComparator());
+        System.out.println(studentsAl);
+
+
+
     }
 }

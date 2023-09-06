@@ -1,6 +1,8 @@
 package academy.devdojo.maratonajava.javacore.CompassUol.dominio;
 
-public class Student01 {
+import java.lang.Comparable.*;
+
+public class Student01 implements Comparable<Student01>{
     private int id;
     private String name;
 
@@ -27,5 +29,10 @@ public class Student01 {
 
     public String toString() {
         return "Id: " + id + ", Name: " + name;
+    }
+
+    @Override
+    public int compareTo(Student01 that) {
+        return Integer.compare(that.id, this.id);
     }
 }
